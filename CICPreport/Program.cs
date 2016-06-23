@@ -21,7 +21,7 @@ namespace CICPreport
         static void Main(string[] args)
         {
             //int second = 3, count = 39;
-            string dptgroup = "4400";
+            string dptgroup = "4404";
             string minute = DateTime.Now.ToString("mm");
  
             Process[] process;
@@ -71,6 +71,20 @@ namespace CICPreport
                     ShowWindow(ParenthWnd, 2);
 
                     T.Timer(4, dptgroup, 31, 1);
+                    Console.ReadKey(true);
+                    break;
+                case "4404":
+                    Console.Title = "中华统计程序-珠海";
+                    process = Process.GetProcessesByName("CICPreportZH");
+                    if (process.Length > 1)
+                    {
+                        Environment.Exit(0);
+                    }
+
+                    ParenthWnd = FindWindow(null, "中华统计程序-珠海");
+                    ShowWindow(ParenthWnd, 2);
+
+                    T.Timer(4, dptgroup, 29, 1);
                     Console.ReadKey(true);
                     break;
             }   
