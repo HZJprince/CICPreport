@@ -21,7 +21,7 @@ namespace CICPreport
         static void Main(string[] args)
         {
             //int second = 3, count = 39;
-            string dptgroup = "4404";
+            string dptgroup = "4400";
             string minute = DateTime.Now.ToString("mm");
  
             Process[] process;
@@ -42,7 +42,7 @@ namespace CICPreport
                     ParenthWnd = FindWindow(null, "中华统计程序-广东");
                     ShowWindow(ParenthWnd, 2);
                     
-                    T.Timer(3, dptgroup, 38, 0);
+                    T.Timer(3, dptgroup, 39, 0);
                     Console.ReadKey(true);
                     break;
                 case "4419":
