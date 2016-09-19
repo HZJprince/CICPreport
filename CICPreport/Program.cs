@@ -42,7 +42,7 @@ namespace CICPreport
                     ParenthWnd = FindWindow(null, "中华统计程序-广东");
                     ShowWindow(ParenthWnd, 2);
                     
-                    T.Timer(3, dptgroup, 39, 0);
+                    T.Timer(3, dptgroup, 40, 0);
                     Console.ReadKey(true);
                     break;
                 case "4419":
