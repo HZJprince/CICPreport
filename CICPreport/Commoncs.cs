@@ -36,7 +36,7 @@ namespace CICPreport
             //string intHour = DateTime.Now.ToString("HH");
             int intMinute = e.SignalTime.Minute;
             //int intSecond = e.SignalTime.Second;
-            if (intHour >= 22 || intHour <= 6)
+            if (intHour >= 24 || intHour <= 6)
             {
                 Thread.Sleep(32400000);
             }
